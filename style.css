@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100px;
+}
+
+.itens_menu{
+    display: flex;
+    gap:  40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    border-radius: 7px;
+    color: white;
+    outline: none;
+    background-color: #3C8F47;
+    border: none;
+    padding: 5px 20px;
+
+}
+
+button:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.item_02{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 608px;;
+    background-image: url(Assets/cup-coffee-with-smoke-coffee-beans-burlap-sack\ 1.png);
+}
