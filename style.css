@@ -1,16 +1,24 @@
 *{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sora', sans-serif;
 }
 
+header{
+    width: 100vw;
+    position: fixed;
+}
+
 nav{
     background-color: white;
+    width: 100vw;
+    /* background-color: white; */
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-evenly;
+    /* gap: 15px; */
     height: 100px;
 }
 
@@ -18,9 +26,13 @@ nav{
     display: flex;
     gap:  40px;
     align-items: center;
-    justify-content: center;
-
+    > a{
+        text-decoration: none;
+        font-weight: 800;
+        color: #402218;
+    }
 }
+
 
 button{
     border-radius: 7px;
@@ -32,6 +44,12 @@ button{
 
 }
 
+a:hover{
+    transition: ease-in 0.3s;
+    scale: 1.2;
+}
+
+
 button:hover{
     scale: 1.2;
     cursor: pointer;
@@ -42,6 +60,53 @@ button:hover{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 608px;;
+    height: 100vh;
     background-image: url(Assets/cup-coffee-with-smoke-coffee-beans-burlap-sack\ 1.png);
+}
+
+.topicos_segunda_dobra{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    gap: 10px;
+    > div {
+        width: 400px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding: 25px;
+        > p{
+            width: 50%;
+            border: 1px solid #40221828 ;
+            padding: 10px;
+        }
+        > h1{
+            font-size: 22px;
+            color: #402218;
+        }
+        > h3 {
+            color: #402218;
+            font-size: 10px;
+        }
+    }
+}
+
+.terceira_dobra{
+    gap: 3px;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #402218;
+    color: white;
+    > div{
+        width: 70%;
+    }
+    > div >h1{
+        font-size: 30px;
+    }
 }
